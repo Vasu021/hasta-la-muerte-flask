@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>A Special Proposal for Urvashi</title>
+    <!-- Bootstrap CSS for layout and basic styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Google Fonts for beautiful typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css.css">
+    <link rel="stylesheet" href="/static/toastr.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="#">For Urvashi</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <section id="intro">
+            <h1 class="text-center">Our Journey Together</h1>
+            <p class="text-center">Since January 2023, my heart has found its way...</p>
+            <div class="row align-items-center my-4">
+                <div class="col-md-4">
+                    <img src="/static/first-click.jpg" alt="Urvashi in Pink Dress" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8 text-right">
+                    <h2>The First Click 📷✨</h2>
+                    <p>The first time you noticed I was taking a selfie, 
+                        you turned and gave this cute pose. 
+                        That moment, in your cute pink dress, I captured your beautiful smile!</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="guide">
+            <div class="row align-items-center my-4">
+                <div class="col-md-8 text-left">
+                    <h2>Guiding Me in the Right Direction 🌟🧭</h2>
+                    <p>In this pic you are showing me the statue of Shree Ram, Laxman Ji and Sita Mata.
+                        Pointing me toward hope and happiness.
+                        Your vibe lights up even the darkest hours, reminding me that there’s always a reason to smile. 
+                        Thank you for being a beautiful part of my journey!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/static/guide.jpg" alt="Guiding me" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="together">
+            <div class="row align-items-center my-4">
+                <div class="col-md-4">
+                    <img src="/static/together.jpg" alt="At the temple" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8 text-right">
+                    <h2>Our First Photo Together 🌊🌊</h2>
+                    <p>By the ocean, outside Lord Shiva’s temple, this was our first picture together. 
+                        Now I realize that this moment was so precious, and I want to create infinite such moments with you.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="together2">
+            <div class="row align-items-center my-4">
+                <div class="col-md-8 text-left">
+                    <h2>A Perfect Day 🌻🌈</h2>
+                    <p>We were in my favorite restaurant, and it was my happiest day because you were by my side. It felt like everything was perfect.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="/static/together2.jpg" alt="At the restaurant" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="cute">
+            <div class="row align-items-center my-4">
+                <div class="col-md-4">
+                    <img src="/static/cute.jpg" alt="At KFC" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8 text-right">
+                    <h2>The Last Goodbye 👋👋</h2>
+                    <p>Our last meet before I left for Germany. 
+                        Your goodbye letter meant so much to me. 
+                        I always read it, and it’s still with me in my wallet.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="letter">
+            <h2 class="text-center">The Goodbye Letter 📝</h2>
+            <div class="row text-center my-4 d-flex justify-content-center">
+                <div class="col-md-4">
+                    <img src="/static/letter-front.jpg" alt="Letter Front" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4">
+                    <img src="/static/letter-back.jpg" alt="Letter Back" class="img-fluid rounded">
+                </div>
+            </div>
+            <p class="text-center">Receiving this letter was a beautiful surprise that filled my heart with warmth. Your words will forever be in my heart.</p>
+        </section>
+
+        <hr>
+
+        <!-- Proposal -->
+        <section id="proposal" class="text-center">
+            <h2>Richa, will You Be Mine?</h2>
+            <p>I understand that things are uncertain. Even I do not have everything figured out, 
+                but I’ve spent days thinking about this, 
+                and I’m finally ready to ask: Will you be mine?</p>
+            <button id="proposeButton" class="btn btn-primary btn-lg">Say Yes</button>
+            <p id="responseSavedText" style="display: none; margin-top: 10px;">Response saved!!! Thank you!!! 😊</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="foot">
+        <div class="text-center text-light py-3">
+            <p>Designed by Vasu with ❤️ for Urvashi</p>
+        </div>
+    </footer>
+
+
+
+        <!-- Bootstrap Modal -->
+        <div class="modal fade" id="responseModal" tabindex="-1" role="dialog" aria-labelledby="responseModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="responseModalLabel">Say Something</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Would you like to say something?</p>
+                        <textarea id="userMessage" class="userMessage" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" id="confirmResponse">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+    <script src="/static/calc.js"></script> <!-- Custom JS for interaction -->
+    <script src="/static/toastr.min.js"></script>
+</body>
+
+</html>

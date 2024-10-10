@@ -1,0 +1,90 @@
+/* General Body */
+body {
+    background-color: rgb(248, 199, 214); /* Soft pink background */
+    font-family: 'Lora', serif; /* Elegant, legible font for body text */
+    color: #333; /* Darker text for readability */
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Dancing Script', cursive; /* Romantic, cursive font for headings */
+    color: #ff69b4; /* Hot pink for headings */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+/* Text */
+p {
+    font-size: 1.1em;
+    /* color: #444;  Soft dark color for body text */
+}
+
+/* Navbar */
+.navbar {
+    background-color: black; /* Black background */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive; /* Elegant cursive font */
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+    color: #ff69b4; /* Hot pink for standout title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand:hover {
+    color: #ffb6c1; /* Light pink hover effect */
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Ensure images scale correctly */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Section styling */
+.row {
+    margin-bottom: 40px; /* Add space between sections */
+}
+
+/* Custom grid adjustment */
+.col-md-4 img {
+    width: 100%; /* Images will occupy 30% of the space */
+    height: auto;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #f979fd; /* Light border between sections */
+}
+
+/* Proposal Button */
+button#proposeButton {
+    background-color: #ff69b4; /* Hot pink background */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive; /* Cursive for a romantic vibe */
+    transition: background-color 0.3s;
+}
+
+button#proposeButton:hover {
+    background-color: #ffb6c1; /* Light pink hover effect */
+}
+
+/* Footer */
+.foot {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+
+.userMessage{
+    width: 100%;
+}
