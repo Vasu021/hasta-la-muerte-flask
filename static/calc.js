@@ -34,18 +34,24 @@ document.getElementById('confirmResponse').addEventListener('click', function() 
         xhr.open('POST', '/saveMessage', true);
         xhr.setRequestHeader('Content-Type', 'application/json');  // Set the content type to JSON
         xhr.send(JSON.stringify(object));
-        xhr.onreadystatechange = function(){
-            if(xhr.readyState == XMLHttpRequest.DONE){
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
                 if (xhr.status === 200) {  // Check if the request was successful
-                    newAlert("Success!!!", "Success", "success");
+                    newAlert("Success!!!", "Your message was saved successfully.", "success");
                 } else {
-                    newAlert("Something went wrong.", "Error", "error");
+                    // Handle different HTTP status codes
+                    let errorMessage = "Something went wrong.";
+                    if (xhr.status === 400) {
+                        errorMessage = "Bad Request: " + xhr.responseText; // Handle 400 Bad Request
+                    } else if (xhr.status === 500) {
+                        errorMessage = "Internal Server Error: " + xhr.responseText; // Handle 500 Internal Server Error
+                    }
+                    newAlert(errorMessage, "Error", "error");
+                    console.log(errorMessage);
                 }
             }
-            // else{
-            //     newAlert("Something went wrong.", "Error", "error");
-            // }
-        }
+        };
+        
 
     // Show the response saved text
     document.getElementById('responseSavedText').style.display = 'block';
